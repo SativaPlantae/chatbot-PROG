@@ -14,7 +14,7 @@ os.environ["OPENAI_API_KEY"] = "sk-proj-5zCJg40TpYrFDlsHQ4DfMY6o0vMoZuIuFK6-WtVb
 # 📄 Função para carregar documentos e QA
 @st.cache_resource
 def carregar_qa_chain():
-    caminho_pdf = r"C:\Users\flxjo\Desktop\Sativa Plantae\Projetos\ChatBot\Documentos\40.pdf"
+    caminho_pdf = "40.pdf"
     loader = PyPDFLoader(caminho_pdf)
     documentos = loader.load()
 
